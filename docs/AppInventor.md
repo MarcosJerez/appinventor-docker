@@ -28,7 +28,7 @@ Ahí descargamos el código que tenemos en este repositorio
 git clone  `https://github.com/himgodfreyho/appinventor-docker.git`
 
 
-Vamos a  `cd appinventor-sources`
+Vamos a  `cd appinventor-sources/docker`
 
     * `git submodule update --init` - Y ejecutamos
 
