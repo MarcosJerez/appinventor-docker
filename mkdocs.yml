@@ -1,0 +1,8 @@
+site_name: Docker
+nav:
+    - Docker: index.md
+    - Wordpress: wordpress.md
+    - AppInventor: AppInventor.md
+    - MkDocs: MkDocs.md
+    - Referencias: referencias.md
+theme: readthedocs
