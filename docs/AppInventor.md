@@ -25,7 +25,7 @@
 
 Creamos una carpeta llamada appinventor-docker
 Ahí descargamos el código que tenemos en este repositorio
-git clone  `https://github.com/himgodfreyho/appinventor-docker.git`
+git clone  `https://github.com/MarcosJerez/appinventor-docker.git`
 
 
 Vamos a  `cd appinventor-sources/docker`
@@ -149,7 +149,7 @@ Salimos del contenedor y ejecutamos appInventor desde docker:
 
 Creamos una carpeta llamada appinventor-docker
 Ahí descargamos el código que tenemos en este repositorio
-git clone  `https://github.com/himgodfreyho/appinventor-docker.git`
+git clone  `https://github.com/MarcosJerez/appinventor-docker.git`
 
 * `cd appinventor-docker/docker/`
 
