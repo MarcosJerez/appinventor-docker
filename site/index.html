@@ -1,160 +1,326 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
-        
-        
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>My Docs</title>
-        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="None">
+  
+  <link rel="shortcut icon" href="./img/favicon.ico">
+  <title>Home - Docker</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap-3.0.3.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
-    </head>
+  <link rel="stylesheet" href="./css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="./css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="./css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Home";
+    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_url = "/";
+  </script>
+  
+  <script src="./js/jquery-2.1.1.min.js"></script>
+  <script src="./js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="./js/highlight.pack.js"></script> 
+  
+</head>
 
-    <body class="homepage">
+<body class="wy-body-for-nav" role="document">
 
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
+  <div class="wy-grid-for-nav">
 
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <a class="navbar-brand" href=".">My Docs</a>
-                </div>
-
-                <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#welcome-to-mkdocs">Welcome to MkDocs</a></li>
-            <li><a href="#commands">Commands</a></li>
-            <li><a href="#project-layout">Project layout</a></li>
-    </ul>
-</div></div>
-                <div class="col-md-9" role="main">
-
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs help</code> - Print this help message.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
-        </div>
-
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = ".",
-                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
-        </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form role="form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> Docker</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
 </div>
+      </div>
 
-    </body>
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href=".">Home</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#docker">Docker</a></li>
+    
+
+    <li class="toctree-l2"><a href="#compose">Compose</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#instalacion">Instalación</a></li>
+        
+            <li><a class="toctree-l3" href="#commandos-basicos">Commandos Básicos</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="AppInventor/">AppInventor</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="MkDocs/">MkDocs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="about/">About</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="referencias/">Referencias</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="wordpress/">Wordpress</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">Docker</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Home</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="docker">Docker</h1>
+<p>La idea detrás de <a href="https://docs.docker.com">Docker</a> es crear contenedores ligeros y portables para las aplicaciones software que puedan ejecutarse en cualquier máquina con Docker instalado, independientemente del sistema operativo que la máquina tenga por debajo, facilitando así también los despliegues.</p>
+<h1 id="compose">Compose</h1>
+<p>Docker Compose es una herramienta que permite simplificar el uso de Docker, generando scripts que facilitan el diseño y la construcción de servicios o de aplicaciones con múltiples componentes. 
+Con Compose puedes crear diferentes contenedores y al mismo tiempo, en cada contenedor, diferentes servicios, unirlos a un volúmen común, iniciarlos y apagarlos, etc. Es un componente fundamental para poder construir aplicaciones y microservicios.</p>
+<p>Esta herramienta llamada docker-compose nos permite crear un fichero de configuración con todos los contenedores que queremos levantar, establecer las dependencias entre ellos y configurarlos individualmente.</p>
+<h2 id="instalacion">Instalación</h2>
+<hr />
+<h3 id="centos-7">Centos 7</h3>
+<p>Aquí veremos como se instala en Centos 7</p>
+<p>Es recomentdable desinstalar viejas versiones de Docker:</p>
+<pre><code>sudo yum remove docker \
+              docker-client \
+              docker-client-latest \
+              docker-common \
+              docker-latest \
+              docker-latest-logrotate \
+              docker-logrotate \
+              docker-engine
+</code></pre>
+<h6 id="docker_1">Docker</h6>
+<p>Necesitamos tener un sistema Dockerizado.  Para ello necesitamos instalar:</p>
+<ul>
+<li><code>sudo yum update</code> </li>
+<li><code>sudo yum install -y yum-utils</code> </li>
+<li><code>sudo yum-config-manager  --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo</code> - Añadimos a nuestro repositorio </li>
+<li>
+<p><code>sudo yum install docker-ce docker-ce-cli containerd.io</code> - Instalamos la ultima versión de docker</p>
+</li>
+<li>
+<p><code>sudo systemctl enable docker</code> - Para que arranque por defecto   </p>
+</li>
+<li><code>sudo systemctl start docker</code> - Arrancamos el sistema</li>
+<li><code>sudo docker run hello-world</code> - Para verificar que se ha arrancado correctamente docker</li>
+</ul>
+<p>Si se quiere instalar otra version de docker podemos ver las versiones con este comando:</p>
+<ul>
+<li><code>sudo yum install docker-ce docker-ce-cli containerd.io</code></li>
+</ul>
+<h6 id="compose_1">Compose</h6>
+<ul>
+<li><code>sudo curl -L "https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose</code></li>
+</ul>
+<p>Si se quiere instalar otra version de compose podemos ver las versiones con este comando:
+<a href="https://github.com/docker/compose/releases">Compose repository release page on GitHub</a></p>
+<ul>
+<li><code>sudo chmod +x /usr/local/bin/docker-compose</code> - Aplicar permisos</li>
+</ul>
+<hr />
+<h3 id="ubuntu">Ubuntu</h3>
+<p>Aquí veremos como se instala en Ubuntu 19.10</p>
+<h6 id="docker_2">Docker</h6>
+<p>Necesitamos tener un sistema Dockerizado.  Para ello necesitamos instalar:</p>
+<ul>
+<li><code>sudo apt-get remove docker docker-engine docker.io containerd runc</code> -Para desinstalar viejas versiones</li>
+</ul>
+<p>Vamos a hacerlo con Docker Engine</p>
+<ul>
+<li><code>sudo apt-get update</code> - Actualizamos </li>
+<li><code>sudo apt-get install docker-ce docker-ce-cli containerd.io</code> </li>
+</ul>
+<p>Si no esta en nuestro repositorios lo añadimos</p>
+<ul>
+<li><code>curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add</code> </li>
+<li>
+<p><code>sudo bash -c 'echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu disco stable" &gt; /etc/apt/sources.list.d/docker-ce.list'</code></p>
+</li>
+<li>
+<p><code>sudo apt-get update</code> - Actualizamos </p>
+</li>
+<li><code>apt-cache policy docker-ce</code> - Vemos que esta en el repositorio</li>
+<li><code>sudo apt-get install -y docker-ce</code> - Instalamos</li>
+</ul>
+<p>si quieres instalar una especifica versión</p>
+<ul>
+<li><code>apt-cache madison docker-ce</code></li>
+<li><code>sudo apt-get install docker-ce=&lt;VERSION_STRING&gt; docker-ce-cli=&lt;VERSION_STRING&gt; containerd.io</code></li>
+</ul>
+<p>Arranque del servicio</p>
+<ul>
+<li><code>sudo systemctl enable docker</code> - Para que arranque por defecto   </li>
+<li><code>sudo systemctl start docker</code> - Arrancamos el sistema</li>
+<li><code>sudo docker run hello-world</code> - Para verificar que se ha arrancado correctamente docker</li>
+</ul>
+<h6 id="compose_2">Compose</h6>
+<ul>
+<li><code>sudo curl -L "https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose</code></li>
+</ul>
+<p>Si se quiere instalar otra version de compose podemos ver las versiones con este comando:
+<a href="https://github.com/docker/compose/releases">Compose repository release page on GitHub</a></p>
+<ul>
+<li><code>sudo chmod +x /usr/local/bin/docker-compose</code> - Aplicar permisos</li>
+</ul>
+<hr />
+<h2 id="commandos-basicos">Commandos Básicos</h2>
+<h4 id="docker_3">Docker</h4>
+<p>Seguramente tengas que executar los siguientes comandos con sudo pero si no quieres hacerlo pincah <a href="https://medium.com/@Grigorkh/how-to-install-docker-on-ubuntu-19-10-60feae8fd382">aquí</a> y al final de la página te dice como</p>
+<ul>
+<li><code>docker run -i -t ubuntu /bin/echo</code> - Crear y ejecutar un contenedor. Lo busca en local y si no lo encuentra se lo descarga. El echo mostrará ese mensaje cuando arranque el contenedor.  </li>
+<li><code>docker start -a &lt;pon-la-ID-del-container&gt;</code> - Para arrancar un contenedor</li>
+<li>
+<p><code>docker stop &lt;pon-la-ID-del-container&gt;</code> - Para parar</p>
+</li>
+<li>
+<p><code>docker pull ubuntu:XX.XX</code> - Descargar imágenes en Docker cloud</p>
+</li>
+<li>
+<p><code>docker images</code> - Todas las imágenes disponibles</p>
+</li>
+<li>
+<p><code>docker image rm &lt;nombre-de-imagen&gt;</code> - Para borrar imagenes</p>
+</li>
+<li>
+<p><code>docker container exec -it proxy /bin/bash</code> - Entrar en un contenedor en ejecución</p>
+</li>
+<li>
+<p><code>docker ps -a</code> - Muestra todos los contenedores.</p>
+</li>
+<li>
+<p><code>docker ps -s</code> - Muestra el disco usado</p>
+</li>
+<li>
+<p><code>docker ps --filter</code> - Este comando es interesante. status={created, restarting, running, removing, paused, exited and dead}</p>
+</li>
+<li>
+<p><code>docker ps --filter status=running</code> - Muestra los contenedores corriendo.</p>
+</li>
+<li>
+<p><code>docker kill $(docker ps -q)</code> - Para todos los contenedores</p>
+</li>
+<li><code>docker rm $(docker ps -a -q)</code> - Elimina todos los contenedores</li>
+<li><code>docker rmi -f $(docker images -q)</code> - Elimina todas las imagenes descargadas<pre><code>Compartir el directorio de trabajo:   
+$ docker run -ti -v "$PWD":/shared:ro ubuntu:14.04 /bin/bash
+ro = lectura. Por defecto es de lectura/escritura
+</code></pre>
+</li>
+</ul>
+<p>Desinstalar Docker
+* <code>sudo apt-get purge docker-engine</code> - Desintala</p>
+<h4 id="compose_3">Compose</h4>
+<ul>
+<li><code>docker-compose --version</code> - La version</li>
+<li><code>docker-compose up -d</code> -  Crear el contenedor y lo ejecuta en background</li>
+<li><code>docker-compose start</code> - Levanta el contenedor</li>
+<li><code>docker-compose down</code> - Apaga los servicios que se levanto con docker-compose y borra los datos.</li>
+<li><code>docker-compose stop</code> - Detiene los servicios y deja los datos como estaban.</li>
+<li><code>docker-compose ps</code> - Muestra los contenedores funcionado</li>
+<li><code>docker-compose exec</code> - Manda un comando y lo ejecuta a uno de los servicios levantados en el contenedor por Docker-compose. Servicios de docker-compose puede ser MYSQL o en el ejemplo: “jekyll”</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="AppInventor/" class="btn btn-neutral float-right" title="AppInventor">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+        <span style="margin-left: 15px"><a href="AppInventor/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="./js/theme.js"></script>
+
+</body>
 </html>
 
 <!--
-MkDocs version : 1.0.4
-Build Date UTC : 2020-04-14 10:31:30
+MkDocs version : 0.16.3
+Build Date UTC : 2021-10-07 08:45:15
 -->
